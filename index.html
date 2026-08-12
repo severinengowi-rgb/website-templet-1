@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium one-page company website template">
+  <title>Premium Company Template</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- =========================================================
+       NAVBAR
+       ========================================================= -->
+  <nav class="navbar navbar-expand-lg fixed-top premium-navbar" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home" aria-label="Company home">
+        <!-- Replace logo-placeholder.png with your real logo -->
+        <img src="assets/image/logo-placeholder.png" alt="Company Logo" class="brand-logo"
+             onerror="this.style.display='none'; this.nextElementSibling.classList.remove('d-none')">
+        <span class="logo-fallback d-none">LOGO</span>
+        <span class="brand-name"></span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 order-lg-3">
+        <!-- Dark mode toggle -->
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <i class="bi bi-sun-fill" id="themeIcon"></i>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#industries">Industries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-brand nav-action" href="#contact">Get in Touch</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- =========================================================
+         HERO / MULTI IMAGE SLIDER
+         Put all slider images in assets/image/
+         ========================================================= -->
+    <section id="home" class="hero-section">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6500">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/image/hero-1.jpg" class="hero-image" alt="Technology project">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+              <span class="eyebrow">ENGINEERING • TECHNOLOGY • INNOVATION</span>
+              <h1>Building reliable solutions for a smarter future.</h1>
+              <p>Premium technology, engineering and support services designed around your business.</p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#services" class="btn btn-brand btn-lg">Explore Services <i class="bi bi-arrow-up-right"></i></a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">Start a Project</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="assets/image/hero-2.jpg" class="hero-image" alt="Technical support">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+              <span class="eyebrow">SMART SYSTEMS</span>
+              <h2>Technology that keeps your operations moving.</h2>
+              <p>From installation to maintenance and user training, we support your complete technology lifecycle.</p>
+              <a href="#about" class="btn btn-brand btn-lg">Discover Who We Are <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="assets/image/hero-3.jpg" class="hero-image" alt="Digital solutions">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+              <span class="eyebrow">PRODUCTS & SOLUTIONS</span>
+              <h2>Practical products. Powerful results.</h2>
+              <p>Explore scalable products built to solve real operational challenges.</p>
+              <a href="#products" class="btn btn-brand btn-lg">View Products <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         STATUS / COUNTERS
+         ========================================================= -->
+    <section class="status-section">
+      <div class="container">
+        <div class="status-wrap reveal">
+          <div class="status-item">
+            <span class="counter" data-target="10">0</span><span>+</span>
+            <p>Years Experience</p>
+          </div>
+          <div class="status-item">
+            <span class="counter" data-target="120">0</span><span>+</span>
+            <p>Projects Delivered</p>
+          </div>
+          <div class="status-item">
+            <span class="counter" data-target="18">0</span><span>+</span>
+            <p>Products & Solutions</p>
+          </div>
+          <div class="status-item">
+            <span class="counter" data-target="45">0</span><span>+</span>
+            <p>Trusted Clients</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TRUSTED BRANDS
+         Logos are intentionally NOT cards.
+         Default CSS makes them faded / grayscale.
+         Clicking a logo restores its normal appearance.
+         ========================================================= -->
+    <section class="section-padding trusted-section">
+      <div class="container">
+        <div class="section-heading text-center reveal">
+          <span class="eyebrow">TRUSTED BY</span>
+          <h2>Brands that trust our work</h2>
+        </div>
+
+        <div class="trusted-logos reveal">
+          <button class="trusted-logo" type="button" aria-label="Trusted brand 1">
+            <img src="assets/image/trusted-1.png" alt="Trusted Brand 1">
+          </button>
+          <button class="trusted-logo" type="button" aria-label="Trusted brand 2">
+            <img src="assets/image/trusted-2.png" alt="Trusted Brand 2">
+          </button>
+          <button class="trusted-logo" type="button" aria-label="Trusted brand 3">
+            <img src="assets/image/trusted-3.png" alt="Trusted Brand 3">
+          </button>
+          <button class="trusted-logo" type="button" aria-label="Trusted brand 4">
+            <img src="assets/image/trusted-4.png" alt="Trusted Brand 4">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT
+         ========================================================= -->
+    <section id="about" class="section-padding about-section">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-6 reveal">
+            <div class="about-main-card">
+              <span class="eyebrow">ABOUT US</span>
+              <h2>Who We Are</h2>
+              <p>We are a technology-focused company delivering reliable systems, technical services and practical digital solutions that help organizations work smarter.</p>
+              <p>Our approach combines professional engineering, responsive support and long-term partnership to create solutions that remain useful beyond deployment.</p>
+              <a href="#contact" class="text-link">Work with us <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row g-4 h-100">
+              <div class="col-12 reveal">
+                <div class="about-mini-card">
+                  <div class="mini-number">01</div>
+                  <div>
+                    <h3>Our Mission</h3>
+                    <p>To provide dependable technology solutions, professional support and continuous innovation that create measurable value for our clients.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 reveal">
+                <div class="about-mini-card">
+                  <div class="mini-number">02</div>
+                  <div>
+                    <h3>Our Vision</h3>
+                    <p>To become a trusted technology partner recognized for quality, innovation, reliability and exceptional customer experience.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SERVICES
+         ========================================================= -->
+    <section id="services" class="section-padding services-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">WHAT WE DO</span>
+          <h2>Services built around your needs</h2>
+          <p>Professional support from installation and deployment to maintenance and user enablement.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-grid-1x2-fill"></i></div>
+              <h3>Dashboard Systems</h3>
+              <p>Custom dashboards that organize information, simplify monitoring and support better decisions.</p>
+              <a href="#contact">Learn more <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-tools"></i></div>
+              <h3>Technical Support</h3>
+              <p>Responsive technical assistance to diagnose issues, restore services and keep users productive.</p>
+              <a href="#contact">Learn more <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-arrow-repeat"></i></div>
+              <h3>Regular Maintenance</h3>
+              <p>Preventive and corrective maintenance designed to improve reliability and extend system life.</p>
+              <a href="#contact">Learn more <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-person-video3"></i></div>
+              <h3>User Training</h3>
+              <p>Practical training that helps teams confidently use systems, tools and digital workflows.</p>
+              <a href="#contact">Learn more <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-headset"></i></div>
+              <h3>24/7 Support Hotline</h3>
+              <p>Always-on support channels for critical issues that require fast response and escalation.</p>
+              <a href="#contact">Learn more <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="service-card">
+              <div class="service-icon"><i class="bi bi-hdd-network-fill"></i></div>
+              <h3>Better Installation</h3>
+              <p>Professional setup and deployment focused on performance, stability, safety and maintainability.</p>
+              <a href="#contact">Learn more <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         INDUSTRIES
+         ========================================================= -->
+    <section id="industries" class="section-padding industries-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">INDUSTRIES WE SERVE</span>
+          <h2>Solutions for different environments</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="industry-card">
+              <img src="assets/image/industry-healthcare.jpg" alt="Healthcare industry">
+              <div class="industry-body">
+                <h3>Healthcare</h3>
+                <p>Technology solutions that support efficient operations, information access and dependable services.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="industry-card">
+              <img src="assets/image/industry-industrial.jpg" alt="Industrial industry">
+              <div class="industry-body">
+                <h3>Industrial</h3>
+                <p>Reliable technology and monitoring solutions for demanding operational environments.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="industry-card">
+              <img src="assets/image/industry-smart.jpg" alt="Smart technology industry">
+              <div class="industry-body">
+                <h3>Smart Technology</h3>
+                <p>Connected systems and digital solutions for modern, data-driven organizations.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FEATURE SECTION - intentionally NOT in navbar
+         Two cards as requested.
+         ========================================================= -->
+    <section class="section-padding feature-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6 reveal">
+            <article class="feature-card">
+              <img src="assets/image/feature-1.jpg" alt="Technology feature">
+              <div>
+                <span class="eyebrow">FEATURE 01</span>
+                <h3>Reliable Technology Infrastructure</h3>
+                <p>Build dependable systems with practical deployment, maintenance and support strategies.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-6 reveal">
+            <article class="feature-card">
+              <img src="assets/image/feature-2.jpg" alt="Technology feature">
+              <div>
+                <span class="eyebrow">FEATURE 02</span>
+                <h3>Support That Stays With You</h3>
+                <p>Keep your team productive with continuous technical assistance and user-focused training.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PRODUCTS
+         Clicking "More" opens modal with more product images/details.
+         ========================================================= -->
+    <section id="products" class="section-padding products-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">OUR PRODUCTS</span>
+          <h2>Solutions made for real-world use</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="product-card">
+              <img src="assets/image/product-1.jpg" alt="Product One">
+              <div class="product-body">
+                <span>PRODUCT 01</span>
+                <h3>Smart Operations Platform</h3>
+                <p>Centralized tools for monitoring, reporting and managing daily operations.</p>
+                <button class="product-more" data-product="0" type="button">View product <i class="bi bi-arrow-up-right"></i></button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="product-card">
+              <img src="assets/image/product-2.jpg" alt="Product Two">
+              <div class="product-body">
+                <span>PRODUCT 02</span>
+                <h3>Digital Service Suite</h3>
+                <p>Connected digital tools that simplify customer service and internal workflows.</p>
+                <button class="product-more" data-product="1" type="button">View product <i class="bi bi-arrow-up-right"></i></button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <article class="product-card">
+              <img src="assets/image/product-3.jpg" alt="Product Three">
+              <div class="product-body">
+                <span>PRODUCT 03</span>
+                <h3>Monitoring & Control</h3>
+                <p>Practical monitoring solutions for visibility, alerts and operational control.</p>
+                <button class="product-more" data-product="2" type="button">View product <i class="bi bi-arrow-up-right"></i></button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTACT
+         ========================================================= -->
+    <section id="contact" class="section-padding contact-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5 reveal">
+            <span class="eyebrow">CONTACT US</span>
+            <h2>Let's build something that works.</h2>
+            <p>Tell us about your project, technical challenge or support requirement. Our team will get back to you.</p>
+
+            <div class="contact-card">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div>
+                <h3>Our Location</h3>
+                <p>Dar es Salaam, Tanzania</p>
+                <a href="https://maps.google.com/?q=Dar+es+Salaam,+Tanzania" target="_blank" rel="noopener">Open in Google Maps <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <i class="bi bi-telephone-fill"></i>
+              <div>
+                <h3>Get in Touch</h3>
+                <p>+255 700 000 000</p>
+                <a href="tel:+255700000000">Call us <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7 reveal">
+            <div class="contact-form-card">
+              <h3>Send us a message</h3>
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" class="form-control" required maxlength="100" autocomplete="name">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" class="form-control" required maxlength="30" autocomplete="tel">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" class="form-control" required maxlength="150" autocomplete="email">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" class="form-control" required maxlength="150">
+                  </div>
+                  <div class="col-12">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="6" required maxlength="2000"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-brand btn-lg" type="submit">Submit Message <i class="bi bi-send"></i></button>
+                    <small id="formStatus" class="d-block mt-3" role="status"></small>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FAQ
+         ========================================================= -->
+    <section id="faq" class="section-padding faq-section">
+      <div class="container">
+        <div class="section-heading text-center reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently asked questions</h2>
+          <p>Quick answers to questions clients commonly ask.</p>
+        </div>
+
+        <div class="accordion faq-accordion reveal" id="faqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">
+                What services do you provide?
+              </button>
+            </h3>
+            <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">We provide dashboard systems, technical support, maintenance, user training, 24/7 support and professional installation.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">
+                Can you customize a solution for our organization?
+              </button>
+            </h3>
+            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes. The template is designed around configurable company content, services, products and contact details.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">
+                Do you provide ongoing technical support?
+              </button>
+            </h3>
+            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Yes. Maintenance and support packages can be customized according to system criticality and business requirements.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour">
+                How do I start a project?
+              </button>
+            </h3>
+            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Use the contact form or the Get in Touch button and share your requirements. The team can then scope the project and recommend the next step.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <a class="footer-brand" href="#home"></a>
+          <p>Reliable technology solutions, professional support and practical digital innovation.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h3>Useful Links</h3>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-4">
+          <h3>Contact Us</h3>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt"></i> Dar es Salaam, Tanzania</li>
+            <li><i class="bi bi-telephone"></i> +255 700 000 000</li>
+            <li><i class="bi bi-envelope"></i> info@company.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> All rights reserved.</span>
+        <span>Built for performance & reliability.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       PRODUCT DETAILS MODAL
+       ========================================================= -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content product-modal">
+        <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="modal-body p-0">
+          <div class="row g-0">
+            <div class="col-lg-7">
+              <div id="productGallery" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner" id="productGalleryInner"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#productGallery" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productGallery" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="product-modal-content">
+                <span id="modalProductTag"></span>
+                <h2 id="modalProductTitle"></h2>
+                <p id="modalProductDescription"></p>
+                <ul id="modalProductFeatures"></ul>
+                <a href="#contact" class="btn btn-brand" data-bs-dismiss="modal">Ask About This Product <i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- GSAP animation library -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
